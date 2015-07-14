@@ -36,7 +36,8 @@ public void onCreate(Bundle savedInstanceState) {
 ```
 
 Kotlin code:
-```override public fun onCreate(savedInstanceState: Bundle?) {
+```
+override public fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     StatusBarCompat().setUpActivity(this)
     setContentView(R.layout.activity_xxxxx)
