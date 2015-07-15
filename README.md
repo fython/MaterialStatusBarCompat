@@ -8,6 +8,14 @@ Easy to make status bar translucent/tint on both Kitkat and Lollipop
 Tips: It may not be compatibled with Android Support Design Library.
 提示：不保证和 Android Support Design Library 兼容。（我也不打算兼容因为我很讨厌它很多奇葩问题）
 
+### Screenshots 截图
+
+Lollipop
+![LPBlue](/art/Screenshot0.png) ![LPDeepPurple](/art/Screenshot1.png)
+
+Kitkat
+![KKBlue](/art/Screenshot2.png) ![KKDeepPurple](/art/Screenshot3.png)
+
 ### Usage 用法
 
 ##### Step 0 第一步
@@ -27,7 +35,8 @@ Call `StatusBarCompat.setUpActivity(this)` before `setContentView()` in your act
 在你的 Activity 中调用 `setContentView()` 之前调用 `StatusBarCompat.setUpActivity(this)`
 
 Java code:
-```@Override
+```
+@Override
 public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     StatusBarCompat.setUpActivity(this);
@@ -56,7 +65,8 @@ Way 0 方法一：
 Add `StatusBarHeaderView` above `Toolbar` in layout
 在布局中添加 `StatusBarHeaderView` 到 `Toolbar` 上面
 
-```<LinearLayout
+```
+<LinearLayout
     ...
     android:orientation="vertical"/>
         <moe.feng.material.statusbar.StatusBarHeaderView
@@ -76,7 +86,8 @@ Put `Toolbar` and other views which should be a part of appbar (Such as `TabLayo
 
 PS: AppBarLayout is based on a vertical LinearLayout（AppBarLayout 基于垂直方向的 LinearLayout）
 
-```<moe.feng.material.statusbar.AppBarLayout
+```
+<moe.feng.material.statusbar.AppBarLayout
     ...
     app:colorNormal="@color/colorForKitkat"
     app:colorDark="@color/colorForLollipop"/>
@@ -100,3 +111,21 @@ Google Plus: +Fung Jichun
 ### 支持项目
 
 Alipay 支付宝: 316643843@qq.com
+
+### License 开源协议
+
+```
+Copyright 2015 FengMoe
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0 
+    
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. 
+```
