@@ -68,6 +68,13 @@ open public class AppBarLayout : LinearLayout {
         headerView.init()
     }
 
+    public fun setColorResources(colorNormal: Int, colorDark: Int) {
+        this.setColor(
+                getResources().getColor(colorNormal),
+                getResources().getColor(colorDark)
+        )
+    }
+
     public fun getNormalColor(): Int {
         return this.colorNormal
     }

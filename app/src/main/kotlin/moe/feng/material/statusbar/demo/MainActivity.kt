@@ -19,17 +19,11 @@ public class MainActivity : TranslucentSBActivity() {
         setSupportActionBar(findViewById(R.id.toolbar) as Toolbar)
 
         findViewById(R.id.button_blue).setOnClickListener({
-            mAppBarLayout?.setColor(
-                    getResources().getColor(R.color.blue_500),
-                    getResources().getColor(R.color.blue_700)
-            )
+            mAppBarLayout?.setColorResources(R.color.blue_500, R.color.blue_700)
         })
 
         findViewById(R.id.button_deep_purple).setOnClickListener({
-            mAppBarLayout?.setColor(
-                    getResources().getColor(R.color.deep_purple_500),
-                    getResources().getColor(R.color.deep_purple_700)
-            )
+            mAppBarLayout?.setColorResources(R.color.deep_purple_500, R.color.deep_purple_700)
         })
     }
 
